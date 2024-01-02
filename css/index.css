@@ -1,0 +1,33 @@
+html,body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+  border-radius: 20px;
+}
+.form-conteiner{
+    max-width: 500px;
+    padding: 1rem;
+}
+  .btn-color{
+    background-color:#0098F9 ;
+    color: #EAECF0;
+    height: 50px;
+  }
+  .btn-color:hover{
+   background-color:#b30710 ;
+   color: #EAECF0;
+  }
+  .input-menor:focus {
+    border-color: #DA101B;
+    border: none; 
+  }
+  .form-control{
+    border-radius: 10px;
+    border: none;
+    color: #DA101B;
+  }
+  .form-control:focus{
+    border: none;
+    box-shadow: 0 0 0 2px #DA101B;
+  }

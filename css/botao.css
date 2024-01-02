@@ -1,0 +1,62 @@
+@import 'cores.css';
+
+.btn-danger{
+    color: white;
+    padding: 30px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 50px;
+}
+.mudarcor{
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.b-cadastrar{
+    padding: 20px;
+}
+.teste {
+    background-color: var(--corBotao);
+    padding: 5%; /* Usando porcentagem para o preenchimento */
+    /* color: #FFFFFF; */
+    max-width: 100%; /* Largura máxima para tornar responsivo */
+    border: 2px solid var(--corBorderBotao);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.178);
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2em; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+.letras{
+    text-transform: uppercase;
+    /* color: #fff; */
+    color: var(--corBotaoLetra);
+    font-size: 20px;
+}
+
+.btn {
+    width: 100%; /* Defina a largura do botão como 100% para corresponder ao elemento "teste" */
+    height: 100%;
+}
+.btn-lentes{
+    border-color: #0098F9;
+       border-radius: 5px;
+       margin-top: 10px;
+       width: 220px;
+       padding: 3.5px;
+}
+/* #animacaoBtn :hover, #cadastro-div :hover{
+    background-color: #031d62;
+    background-color: var(--corBotaoAnimado);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.104);
+    transition: .5s;
+} */
+#animacaoBtn :hover, #cadastro-div :hover{
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.104);
+    transition: .5s;
+}

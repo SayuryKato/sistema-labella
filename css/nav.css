@@ -1,0 +1,83 @@
+@import 'css/cores.css';
+
+nav{
+    /* background-color:#F0F0F0; */
+    background-color:var(--corFundoNav);
+    color: black;
+}
+span{
+    color: var(--corLetraNav);
+}
+
+.btn-close{
+    color: black;
+}
+/* Sayury */
+.textCodigo{
+    display: block;
+    font-size: 1em;
+}
+#codigo_barras{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.140) 0px 2px 4px 0px inset;
+    border: none;
+    padding: 5px;
+    /* display: block; */
+    width: 70%;
+}
+
+.pesq{
+    background-color: var(--corBotaoCadastrar);
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 10px 0px 40px 0px;
+    width: 20%;
+}
+
+.pesq:hover, .pesqVend:hover {
+    box-shadow: 0 12px 16px 0 rgba(123, 119, 119, 0.15), 0 17px 50px 0 rgba(181, 176, 176, 0.100);
+    background-color: var(--corBotaoAnimado);
+    /* transform: scale(1.02); */
+  }
+
+.pesq_teste{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 85%;
+}
+
+
+.resultVendas{
+    background-color: cadetblue;
+}
+
+.pesqVend{
+    background-color: var(--corBotaoCadastrar);
+}
+
+
+.next-page-button {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-page-button {
+    position: fixed;
+    bottom: 30px;
+    left: 50px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imgIconCarrinho{
+    height: 40px;
+}

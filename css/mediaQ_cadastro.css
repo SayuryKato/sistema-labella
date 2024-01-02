@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+@media screen and (max-width:767px) {
+    .responsInput{
+        display: block;
+        font-size: 18px;
+        width: 100%;
+        
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .letras{
+        font-size: 16px;
+    }
+    .teste{
+        padding: 3%;
+    }
+    #selecpdf{
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .responsInput{
+        display: block;
+        font-size: 18px;
+        width: 90%;
+        height: 45px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+}
+@media screen and (min-width:992px) {
+    body{
+        background-color: #f0f2f5;
+    }
+}

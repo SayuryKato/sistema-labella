@@ -1,0 +1,187 @@
+@import 'css/cores.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --amarelo:var(--#F5F5F5);
+}
+#container{
+    display: block;
+    max-width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--amarelo);
+
+}
+h1{
+    text-align: center;
+    align-items: center;
+    color: #415161;
+    margin: 0;
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 15px;
+}
+
+.pdfconf{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 30PX;
+}
+
+#customButton {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#customButton:hover{
+    background-color: #41516145;
+}
+
+#fileInput {
+display: none; /* Esconde o campo de seleção de arquivo */
+}
+
+#fileName{
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+label{
+    color: #415161;
+    font-size: 13px;
+    margin: 0px;
+
+}
+fieldset{
+    padding: 30px;
+    border: none;
+    margin: 0;
+}
+.campo_digitacao{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 10.26px;
+    background: #ffffff;
+    border-color: #ddd;
+    border-radius: 0%;
+    box-shadow: none;
+    border-top-color:#ddd ;
+    font-size: 13px;
+    border: solid #ddd;
+    border-radius: 7px;
+
+}
+#obrigatorio  {
+    color: red;
+    font-size: 30pt;
+}
+#button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+}
+#sexo{
+    padding: 10px;
+    margin: 0;
+    margin-top: 0;
+}
+#identificacao {
+    display: flexbox;
+    padding: 40px;
+    margin-top: 0px;
+    margin: 0;
+    position: absolute;
+}
+.input-group {
+    margin-bottom: 15px;
+    /* background-color: #1877f2; */
+}
+@media screen and (min-width:1200px){
+    #container{
+        margin-bottom: 0;
+    }
+
+    .primeiradiv{
+        width: 50%;
+        float: left;
+        padding:19.5px;
+        margin-top: 10px;
+       
+    }
+
+    .segundadiv{
+        width: 50%;
+        flex-direction: row;
+        float: right;
+        padding:12px;
+        margin-top: 10px;
+       
+    }
+    .sexo{
+        float: left;
+        margin-right:600px;
+    }
+    #button{
+        padding: 20px;
+        width:40%;
+        border-radius: 20px;
+    }
+    label{
+        font-size: 16px;
+    }
+    
+input {
+    min-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+.input-group {
+    margin-bottom: 15px;
+    /* background-color: #1877f2; */
+}
+}
+
+input#btnCadastro{
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    background-color: var(--corBotaoCadastrar);
+    color: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.resultCodBarras{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultTotalVenda{
+    width: 80%;
+    margin: auto;
+}
+
+#produtosSelecionados{
+    background-color: white;
+    border: 1px solid #415161;
+}

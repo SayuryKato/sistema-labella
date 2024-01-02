@@ -1,0 +1,41 @@
+.botao_001{
+    background-color:#0098F9;
+       color: #fff;
+       font-size: 15pt;
+       border-color: #DA101B;
+       border-radius: 5px;
+       margin-top: 10px;
+       width: 200px;
+       padding: 3.5px;
+       box-shadow: none;
+       border-style: none;
+       
+}
+.botao_0011{
+       border-color: #DA101B;
+       border-radius: 5px;
+       margin-top: 10px;
+       width: 220px;
+       padding: 3.5px;
+}
+.botao_0011:focus {
+       border: 2px solid #DA101B; 
+       box-shadow: 0 0 5px #DA101B; 
+       outline: none; 
+     }
+.botao_0011:hover{
+      background-color: #DA101B;
+}
+.btn-lentes{
+       background-color:#DA101B;
+       color: #fff;
+       font-size: 15pt;
+       border-color: #DA101B;
+       border-radius: 5px;
+       margin-top: 10px;
+       width: 200px;
+       padding: 16px;
+       box-shadow: none;
+       border-style: none;
+   }
+   

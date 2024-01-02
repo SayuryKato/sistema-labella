@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import 'css/cores.css';
+
+body {
+    font-family: Arial, sans-serif;
+    ;
+    background-color: var(--corFundoIndex);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    transition: width .5s;
+    transition-timing-function: ease;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+#nome, #senha {
+    background-color: rgba(169, 169, 169, 0.147);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    /* width: 200px; */
+
+    /* transition: width .5s;
+    transition-timing-function: ease; */
+}
+
+input[type="submit"] {
+    background-color: var(--corBotaoEntrar);
+    color: #fff;
+    cursor: pointer;
+
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--corBotaoAnimado);
+}
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 34px;
+    right: 14px;
+    cursor: pointer;
+}
+
+.imglabela{
+    width: 100px;
+}

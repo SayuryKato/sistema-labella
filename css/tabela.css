@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.table-responsive th, .table-responsive td{
+    text-align: center;
+    white-space: nowrap;
+}
+
+.filtroMsg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 5px;
+}
+
+#filtroTable{
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.destaque{
+    background-color: yellow;
+}
+
+.mensagem-sucesso {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 5px;
+    transition: opacity 0.5s ease; /* Transição suave da opacidade */
+}
+
+.oculto {
+    opacity: 0; /* Inicialmente oculto (opacidade 0) */
+}

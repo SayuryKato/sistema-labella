@@ -1,0 +1,17 @@
+{
+    "name": "sayury/modelo_sistema_v2",
+    "autoload": {
+        "psr-4": {
+            "Sayury\\ModeloSistemaV2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SayuryKato",
+            "email": "skdp.ecp19@uea.edu.br"
+        }
+    ],
+    "require": {
+        "smalot/pdfparser": "^2.7"
+    }
+}

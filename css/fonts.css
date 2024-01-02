@@ -1,0 +1,11 @@
+@import 'cores.css';
+
+html,body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #F3F3F3; */
+    background-color: var(--corFundoInicial);
+
+    /* background: url('../image/labelimage/imgCompletLabel.jpeg') no-repeat center;
+    background-size: cover; */
+}

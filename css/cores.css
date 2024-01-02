@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+:root{
+
+    /*Cor OFICIAL DO SISTEMA*/
+    /* --corFundoIndex: #f0f2f5;
+    --corFundoENavInicial: #F3F3F3;
+    --corBotao: #0838BC; 
+    --corBorderBotao: #fff;
+    --corBotaoAnimado: #031d62; 
+    */
+    
+    
+    /*TESTE*/
+    --corFundoIndex: #f0f2f5;
+    --corBotaoEntrar: #df3b82; 
+    --corFundoInicial: #F3F3F3;
+    --corFundoNav: #CD387A;
+    --corLetraNav: #000;
+
+    --corBotao: #f0f2f5;
+    --corBotaoLetra: #000; 
+    --corBorderBotao: #CD387A;
+    --corBotaoAnimado: #CD387A; 
+    
+    --corBotaoCadastrar: #df3b82; 
+
+    
+    /*Cor da LABEL*/
+    /* --corLabel-yellow: #f6b330;
+    --corLabel-pink: #df3b82;
+    --corLabel-black: #000; */
+}
+
+.label{
+    background-color: var(--corLabel-yellow);
+}
+#logo{
+    height: 25px;
+}

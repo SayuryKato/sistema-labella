@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: #f0f2f5;
+
+    }
+    #nome, #senha{
+        width: 95%;
+    }
+    .container{
+        width: 500px;
+    }
+    
+}
