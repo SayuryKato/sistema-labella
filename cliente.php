@@ -30,7 +30,7 @@
       <h2 style="text-align: center;">Cadastro do Cliente</h2>
     </div>
 
-    <form class="centerContainer" action="" method="post">
+    <form class="centerContainer" action="processar_formCliente.php" method="post">
       <div class="primeiradiv">
         <fieldset>
           <p>
@@ -43,11 +43,11 @@
           </p>
           <p>
             <label for="rg_cliente"> <strong>RG:</strong></label>
-            <input class="responsInput" type="number" id="rg_cliente" name="rg_cliente" required>
+            <input class="responsInput" type="number" id="rg_cliente" name="rg_cliente">
           </p>
           <p>
-            <label for="nascimento_cliente"> <strong>Data de Nascimento:</strong></label>
-            <input class="responsInput" type="date" id="nascimento_cliente" name="nascimento_cliente" required>
+            <label for="data_nascimento"> <strong>Data de Nascimento:</strong></label>
+            <input class="responsInput" type="date" id="data_nascimento" name="data_nascimento" required>
           </p>
 
         </fieldset>
@@ -55,29 +55,29 @@
       <div class="segundadiv">
         <fieldset>
           <p>
-            <label for="cep_endereco"> <strong>CEP:</strong></label>
-            <input class="responsInput" type="text" id="cep_endereco" name="cep_endereco" oninput="buscarEnderecoPorCEP()" placeholder="69100000">
+            <label for="cep_usuario"> <strong>CEP:</strong></label>
+            <input class="responsInput" type="text" id="cep_usuario" name="cep_usuario" oninput="buscarEnderecoPorCEP()" placeholder="69100000">
           </p>
           <p>
-            <label for="endereco_cliente"> <strong>Endereço:</strong></label>
-            <input class="responsInput" type="text" id="endereco_cliente" name="endereco_cliente">
+            <label for="endereco_usuario"> <strong>Endereço:</strong></label>
+            <input class="responsInput" type="text" id="endereco_usuario" name="endereco_usuario">
           </p>
           <p>
             <label for="numero_casa"> <strong>Número:</strong></label>
             <input class="responsInput" type="number" id="numero_casa" name="numero_casa">
           </p>
           <p>
-            <label for="bairro_cliente"> <strong>Bairro:</strong></label>
-            <input class="responsInput" type="text" id="bairro_cliente" name="bairro_cliente">
+            <label for="bairro"> <strong>Bairro:</strong></label>
+            <input class="responsInput" type="text" id="bairro" name="bairro">
           </p>
 
           <p>
-            <label for="comple_endereco"> <strong>Complemento:</strong></label>
-            <input class="responsInput" type="text" id="comple_endereco" name="comple_endereco">
+            <label for="complem_enderec"> <strong>Complemento:</strong></label>
+            <input class="responsInput" type="text" id="complem_enderec" name="complem_enderec">
           </p>
           <p>
-            <label for="cidade_endereco"> <strong>Cidade:</strong></label>
-            <input class="responsInput" type="text" id="cidade_endereco" name="cidade_endereco">
+            <label for="cidade_usuario"> <strong>Cidade:</strong></label>
+            <input class="responsInput" type="text" id="cidade_usuario" name="cidade_usuario">
           </p>
         </fieldset>
       </div>
@@ -85,16 +85,16 @@
         <div class="primeiradiv">
           <fieldset>
             <p>
-              <label for="telefone_cliente"> <strong>Telefone:</strong></label>
-              <input class="responsInput" type="text" id="telefone_cliente" name="telefone_cliente">
+              <label for="telefone_usuario"> <strong>Telefone:</strong></label>
+              <input class="responsInput" type="text" id="telefone_usuario" name="telefone_usuario">
             </p>
             <p>
-              <label for="celular_cliente"> <strong>Celular:</strong></label>
-              <input class="responsInput" type="text" id="celular_cliente" name="celular_cliente" oninput="formatarNumero()" required placeholder="(DDD) 00000-0000">
+              <label for="celular_usuario"> <strong>Celular:</strong></label>
+              <input class="responsInput" type="text" id="celular_usuario" name="celular_usuario" oninput="formatarNumero()" required placeholder="(DDD) 00000-0000">
             </p>
             <p>
-              <label for="email_cliente"> <strong>E-mail:</strong></label>
-              <input class="responsInput" type="email" id="email_cliente" name="email_cliente" placeholder="ex: joao@gmail.com">
+              <label for="email_usuario"> <strong>E-mail:</strong></label>
+              <input class="responsInput" type="email" id="email_usuario" name="email_usuario" placeholder="ex: joao@gmail.com">
             </p>
 
           </fieldset>
@@ -114,7 +114,7 @@
     }
 
     function formatarNumero() {
-      const inputTelefone = document.getElementById('celular_cliente');
+      const inputTelefone = document.getElementById('celular_usuario');
       let numeroFormatado = inputTelefone.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
 
       if (numeroFormatado.length > 11) { // Verifica se o número ultrapassa 11 dígitos (incluindo DDD)
@@ -133,7 +133,7 @@
     }
 
     function buscarEnderecoPorCEP() {
-      const cep = document.getElementById('cep_endereco').value.replace(/\D/g, '');
+      const cep = document.getElementById('cep_usuario').value.replace(/\D/g, '');
       if (cep.length === 8) {
         fetch(`https://viacep.com.br/ws/${cep}/json/`)
           .then(response => response.json())
@@ -141,9 +141,9 @@
             if (data.erro) {
               alert('CEP não encontrado.');
             } else {
-              // document.getElementById('logradouro').value = data.logradouro;
-              document.getElementById('bairro_cliente').value = data.bairro;
-              document.getElementById('cidade_endereco').value = data.localidade;
+              document.getElementById('endereco_usuario').value = data.logradouro;
+              document.getElementById('bairro').value = data.bairro;
+              document.getElementById('cidade_usuario').value = data.localidade;
               // document.getElementById('uf').value = data.uf;
             }
           })

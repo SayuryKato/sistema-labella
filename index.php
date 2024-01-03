@@ -40,7 +40,6 @@
         </form>
     </div>
     <script>
-        /*Sayuy*/
         let btn = document.querySelector('.material-symbols-outlined');
         btn.addEventListener('click', function() {
             let input = document.querySelector('#senha');

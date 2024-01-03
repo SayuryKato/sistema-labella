@@ -122,7 +122,6 @@
       <p>
       <div class="input-group">
         <input id="btnCadastro" type="submit" value="Cadastrar">
-        <!-- style="background-color: #0838BC;color: #fff; border: 1px solid #ccc;" -->
       </div>
       </p>
     </form>
